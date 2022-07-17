@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/segment7" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2|Noticia+Text|Bellefair|PT+Sans">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="Stylesheet.css">
+    <title>JS Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <form id="calc">
+            <table>
+                <tr>
+                <div id="scrn">
+                <input type="text" value="DEG" name="mode" id="mode" disabled>
+                <input type="text" value="0" name="display" id="display" disabled>
+                <input type="text" value="" name="ans" id="ans" disabled>
+            </tr>
+
+    <div class="cen">
+        <tr>
+    <button type="button" id="shift" name="shiftF" value="shift">shift</button>
+    <button type="button" id="m" name="m" value="mode">mode</button>
+    <button type="button" id="!" name="!" value="!">!</button>
+    <button type="button" id="in" name="in" value="In">In</button>
+    <button type="reset" id="off" name="off" value="OFF">OFF</button>
+</tr>
+    <br />
+    <tr>
+    <button type="button" onclick= 'sss("cos")' id="cos" name="cos" value="cos">cos</button>
+    <button type="button" onclick= 'sss("sin")' id="sin" name="sin" value="sin">sin</button>
+    <button type="button" id="log" name="log" value="log">log</button>
+    <button type="button" onclick= 'sss("tan")' id="tan" name="tan" value="tan">tan</button>
+    <button type="button" id="π" name="π" value="π">π</button>
+</tr>
+    <br />
+    <tr>
+    <button type="button" id="e" name="e" value="e">e</button>
+    <button type="button" id="√" name="√" value="√">√</button>
+    <button type="button" id="rasPow" name="toPow" value="^">^</button>
+    <button type="button" id="del" name="delete" value="&larr;">&larr;</button>
+    <button type="button" id="ce" value="ON">ON</button>
+</tr>
+    <br />
+    <tr>
+    <button type="button" onclick= 'num("7")' id="7" name="seven" value="7">7</button>
+    <button type="button" onclick= 'num("8")' id="8" name="eight" value="8">8</button>
+    <button type="button" onclick= 'num("9")' id="9" name="nine" value="9">9</button>
+    <button type="button" id="/" name="divide" value="&divide;">&divide;</button>
+    <button type="button" id="%" name="percentage" value="&percnt;"> &percnt;</button>
+</tr>
+    <br />
+    <tr>
+    <button type="button" onclick= 'num("4")' id="4" name="four" value="4">4</button>
+    <button type="button" onclick= 'num("5")' id="5" name="five" value="5">5</button>
+    <button type="button" onclick= 'num("6")' id="6" name="six" value="6">6</button>
+    <button type="button" id="+" name="plus" value="+">+</button>
+    <button type="button" id="x" name="multiply" value="&times;">&times;</button>
+</tr>
+    <br />  
+    <tr>
+    <button type="button" onclick= 'num("1")' id="1" name="one" value="1">1</button>
+    <button type="button" onclick= 'num("2")' id="2" name="two" value="2">2</button>
+    <button type="button" onclick= 'num("3")' id="3" name="three" value="3">3</button>
+    <button type="button" id="-" name="minus" value="-">-</button>
+    <button type="button" onclick= 'num("00")' id="00" name="zerozero" value="00">00</button>
+</tr>
+    <br />  <tr>
+    <button type="button" id="." name="point" value=".">.</button>
+    <button type="button" onclick= 'num("0")' id="0" name="zero" value="0">0</button>
+    <button type="button" id="=" name="equals" value="=">=</button>
+</tr>
+</div> 
+    </table>
+    </form>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
